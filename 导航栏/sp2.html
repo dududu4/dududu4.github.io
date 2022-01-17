@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>水平二级导航</title>
+		<style type="text/css">
+			body {
+				font-family: Verdana;
+				font-size: 24px;
+				line-height: 1.5;
+			}
+			a {
+				color: #000;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #F00;
+			}
+
+			#menu {
+				border: 1px solid #CCC;
+				background: #eee;
+				width:10%;
+				height:32px;
+			}
+			#menu ul { list-style: none; margin: 0px; padding: 0px; }
+			#menu ul li { background: #eee; padding: 0px 8px; height: 26px; line-height: 26px; border-bottom: 1px solid #CCC; position:relative; }
+			#menu ul li ul { display:none; position: absolute; left: 100px; top: 0px; width:100px; border:1px solid #ccc; border-bottom:none; }
+			#menu ul li.current ul { display:block;}
+			#menu ul li:hover ul { display:block;}
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+
+			<ul>
+				<li><a href="@#">首页</a></li>
+				<li><a href="#">图书</a>
+					<ul>
+						<li><a href="#">少儿</a></li>
+						<li><a href="#">外语</a></li>
+					</ul>
+				</li>
+				<li><a href="#">百货</a>
+					<ul>
+						<li><a href="#">家居</a></li>
+						<li><a href="#">文具</a></li>
+						<li><a href="#">生活</a></li>
+					</ul>
+				</li>
+				<li><a href="#">服装</a>
+					<ul>
+						<li><a href="#">女装</a></li>
+						<li><a href="#">男装</a></li>
+						<li><a href="#">童装</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
